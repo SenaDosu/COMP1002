@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* width includes padding and border */
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #f1eeee;
+}
+a { text-decoration: none; 
+  color: inherit; 
+}
+
+
+/* header */
+
+header {
+  display: flex;
+  height: 56px;
+  color: #fff;
+  align-items: center;
+  padding: 0 50px;
+  flex-grow: 1;
+}
+
+.header-logo {
+  /* remove the small gap images get under them */
+  display: block;
+  height: 40px;
+  margin: 0 15px;
+}
+
+.header-button {
+    position: absolute;
+    right: 20px;
+    width: 150px;
+    background-color: #d48b2b;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+nav menu{
+    position: absolute;
+    left: 35%;
+    top: 0;
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 5px;
+}
+
+nav a {
+  color: #d48b2b;
+  font-size: 1.25rem;
+  font-weight: 450;
+  /* transition: all 0.3s ease; */
+}
+
+
+/* HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 56px);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #556B2F;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #000;
+}
